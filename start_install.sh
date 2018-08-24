@@ -1,5 +1,8 @@
+#!/usr/bin/env bash
+
 # ubuntu based
 # Applied by terraform
+sudo apt-get update
 sudo apt install awscli -y
 sudo apt-get install git -y
 sudo apt-get install emacs -y
@@ -13,8 +16,4 @@ $HOME/terraform-installer/terraform-install.sh -a
 # Install Pycharm
 sudo snap install pycharm-community --classic
 
-# install pyspark
-#sudo apt-get install -y openjdk-8-jdk-headless
-sudo apt-get install -y default-jdk
-sudo pip --no-cache-dir install pyspark
 

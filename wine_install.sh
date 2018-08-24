@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # The -E is important when working behind a proxy
 sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/Release.key
