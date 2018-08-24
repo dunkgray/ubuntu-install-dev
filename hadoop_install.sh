@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Thisw isn't really a full install.
+# I decided to use ERM instead.
+
 # based on;
 # https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-18-04
 
