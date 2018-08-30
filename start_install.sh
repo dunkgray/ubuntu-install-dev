@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ubuntu based
-# 
+#
 sudo apt-get update
 sudo apt install awscli -y
 sudo apt-get install git -y
