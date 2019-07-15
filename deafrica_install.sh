@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# set up for Amazon Linux AMI
 #
 sudo yum -y update
 sudo yum install awscli -y
@@ -28,3 +29,15 @@ chmod +x ./aws-iam-authenticator
 sudo mv ./aws-iam-authenticator /usr/local/bin/aws-iam-authenticator
 
 echo "export EDITOR='/usr/bin/nano'" >> ~/.bashrc 
+git config --global user.name "Duncan Gray"
+git config --global user.email "duncan.gray@gmail.com"
+
+# Docker
+sudo amazon-linux-extras install docker -y
+sudo service docker start
+sudo usermod -a -G docker ec2-user
+
+
+# docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
