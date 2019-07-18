@@ -7,7 +7,9 @@ sudo yum install awscli -y
 sudo yum install git -y
 sudo yum install emacs -y
 #sudo apt-get install unzip -y
-#sudo yum install python-pip -y
+sudo yum install python3 -y
+sudo yum install python-pip -y
+sudo pip3 install click boto3 rasterio
 #sudo apt-get install maven -y
 
 # Install terraform
