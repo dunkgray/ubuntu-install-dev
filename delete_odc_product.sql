@@ -24,6 +24,7 @@
 
 -- Are there any datasets that are descendents of this product?
 -- If so, they will need to be removed first!
+set search_path = agdc;
 select count(*)
 from dataset_source
   left join dataset d on dataset_source.source_dataset_ref = d.id
