@@ -3,6 +3,9 @@ apt-get -y install postgresql
 apt-get -y install emacs
 pip3 install awscli
 
+git config --global user.email "dunk.tracey@gmail.com"
+git config --global user.name "Duncan Gray"
+
 # let's get some repos
 git clone https://github.com/opendatacube/datacube-core.git /opt/datacube-core
 git clone https://github.com/GeoscienceAustralia/landsat-to-cog.git /opt/landsat-to-cog
