@@ -2,6 +2,7 @@ apt-get update
 apt-get -y install postgresql
 apt-get -y install emacs
 pip3 install awscli
+pip3 install matplotlib click scikit-image pep8 ruamel.yaml
 
 git config --global user.email "dunk.tracey@gmail.com"
 git config --global user.name "Duncan Gray"
