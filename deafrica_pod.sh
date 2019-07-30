@@ -5,6 +5,7 @@ apt-get install -y gfortran
 pip3 install awscli
 pip3 install cligj==0.5.0
 pip3 install --index-url https://packages.dea.gadevs.ga/ wofs
+pip3 install git+https://github.com/GeoscienceAustralia/fc --no-deps --global-option=build --global-option='--executable=/usr/bin/env python3'
 pip3 install matplotlib click scikit-image pep8 ruamel.yaml rio-cogeo numexpr
 
 
