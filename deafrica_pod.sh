@@ -1,8 +1,12 @@
 apt-get update
 apt-get -y install postgresql
 apt-get -y install emacs
+apt-get install -y gfortran
 pip3 install awscli
-pip3 install matplotlib click scikit-image pep8 ruamel.yaml
+pip3 install cligj==0.5.0
+pip3 install --index-url https://packages.dea.gadevs.ga/ wofs
+pip3 install matplotlib click scikit-image pep8 ruamel.yaml rio-cogeo numexpr
+
 
 git config --global user.email "dunk.tracey@gmail.com"
 git config --global user.name "Duncan Gray"
