@@ -1,3 +1,4 @@
+# git clone https://github.com/dunkgray/ubuntu-install-dev.git
 apt-get update
 apt-get -y install postgresql
 apt-get -y install emacs
