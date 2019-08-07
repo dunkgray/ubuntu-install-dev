@@ -11,6 +11,7 @@ sudo yum install python3 -y
 sudo yum install python-pip -y
 sudo pip3 install click boto3 rasterio
 #sudo apt-get install maven -y
+sudo yum install xorg-x11-xauth.x86_64 -y
 
 # Install terraform
 sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME

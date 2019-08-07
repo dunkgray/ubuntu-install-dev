@@ -9,7 +9,6 @@ pip3 install --index-url https://packages.dea.gadevs.ga/ wofs
 pip3 install git+https://github.com/GeoscienceAustralia/fc --no-deps --global-option=build --global-option='--executable=/usr/bin/env python3'
 pip3 install matplotlib click scikit-image pep8 ruamel.yaml rio-cogeo numexpr
 
-
 git config --global user.email "dunk.tracey@gmail.com"
 git config --global user.name "Duncan Gray"
 
