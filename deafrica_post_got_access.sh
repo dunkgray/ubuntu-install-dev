@@ -6,4 +6,4 @@ git clone git@github.com:dunkgray/DEAfrica_scripts.git ~/DEAfrica_scripts
 # Doing these remotely.  Show do this with everything really
 # git clone git@github.com:GeoscienceAustralia/landsat-to-cog.git ~/landsat-to-cog
 # git clone --branch usgs_l2_testing git@github.com:opendatacube/cube-in-a-box.git ~/cube-in-a-box
-# git clone git@github.com:digitalearthafrica/config.git
+# git clone git@github.com:digitalearthafrica/config.git ~/deafrica_config
