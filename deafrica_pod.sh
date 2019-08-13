@@ -17,3 +17,8 @@ git clone https://github.com/opendatacube/datacube-core.git /opt/datacube-core
 git clone https://github.com/GeoscienceAustralia/landsat-to-cog.git /opt/landsat-to-cog
 git clone --branch usgs_l2_testing https://github.com/opendatacube/cube-in-a-box.git /opt/cube-in-a-box
 git clone --branch dsg_landsat_usgs_testing https://github.com/opendatacube/WOFLs-orchestration.git /opt/WOFLs-orchestration
+git clone https://github.com/dunkgray/DEAfrica_scripts.git /opt/DEAfrica_scripts
+
+# This is for the database generation script
+# docker/auxiliary/setup-k/assets/create-db.sh
+git clone https://github.com/opendatacube/datacube-ows.git /opt/datacube-ows
