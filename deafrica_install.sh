@@ -37,7 +37,7 @@ sudo mv ./aws-iam-authenticator /usr/local/bin/aws-iam-authenticator
 
 echo "export EDITOR='/usr/bin/nano'" >> ~/.bashrc 
 git config --global user.name "Duncan Gray"
-git config --global user.email "duncan.gray@gmail.com"
+git config --global user.email "duncan.gray@ga.gov.au"
 
 # Docker
 sudo amazon-linux-extras install docker -y
