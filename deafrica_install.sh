@@ -18,7 +18,7 @@ sudo pip3 install click boto3 rasterio
 
 
 # Install terraform
-sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME
+sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME/terraform-installer
 $HOME/terraform-installer/terraform-install.sh -a
 
 # Install Pycharm
@@ -40,9 +40,12 @@ git config --global user.name "Duncan Gray"
 git config --global user.email "duncan.gray@ga.gov.au"
 
 # Docker
+
 sudo amazon-linux-extras install docker -y
+#sudo yum install docker -y # Didnt work for Fedora?
+# Maybe it did.  I just have to restart my VM
 sudo service docker start
-sudo usermod -a -G docker ec2-user
+sudo usermod -a -G docker $USER
 
 
 # docker-compose
