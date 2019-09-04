@@ -11,6 +11,7 @@
 #  mkdir sandpit
 #  cd sandpit/
 # git clone git@github.com:dunkgray/ubuntu-install-dev.git
+# emacs -nw # no windows emacs
 sudo apt-get update
 sudo apt install awscli -y
 sudo apt-get install git -y
