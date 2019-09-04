@@ -18,7 +18,6 @@ sudo apt-get install emacs -y
 sudo apt-get install unzip -y
 sudo apt-get install python-pip -y
 sudo apt-get install maven -y
-sudo apt-get install dbus-x11 -y # to fix emacs errors
 
 # Install terraform
 sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME/terraform-installer
