@@ -21,10 +21,10 @@ sudo apt-get install maven -y
 sudo apt-get install dbus-x11 -y # to fix emacs errors
 
 # Install terraform
-sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME
+sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME/terraform-installer
 $HOME/terraform-installer/terraform-install.sh -a
 
-# Install Pycharm
+# Install Pycharmmore
 sudo snap install pycharm-community --classic
 
 
