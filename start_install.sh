@@ -8,8 +8,6 @@
 # sudo apt-get install git -y
 # ssh-keygen -t rsa -b 4096 -C "duncan.gray@ga.gov.au"
 # more ~/.ssh/id_rsa.pub
-#  mkdir sandpit
-#  cd sandpit/
 # git clone git@github.com:dunkgray/ubuntu-install-dev.git
 # emacs -nw # no windows emacs
 sudo apt-get update
@@ -36,8 +34,7 @@ touch ~/.Xauthority
 xauth generate :0 . trusted
 
 # For dev
-mkdir sandpit # this should fail.  That's ok
-mkdir sandpit/pycharmremote
+mkdir pycharmremote
 
 
 # git setup

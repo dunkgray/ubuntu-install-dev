@@ -48,7 +48,7 @@ sudo amazon-linux-extras install docker -y
 #sudo yum install docker -y # Didnt work for Fedora?
 # Maybe it did.  I just have to restart my VM
 sudo service docker start
-sudo usermod -a -G docker $USER
+sudo usermod -aG docker $USER
 
 
 # docker-compose
