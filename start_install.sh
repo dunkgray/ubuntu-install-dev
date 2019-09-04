@@ -28,6 +28,7 @@ $HOME/terraform-installer/terraform-install.sh -a
 sudo snap install pycharm-community --classic
 #sudo snap install pycharm-professional --classic
 
+
 #setup Xauthority
 mv .Xauthority old.Xauthority
 touch ~/.Xauthority
@@ -36,4 +37,9 @@ xauth generate :0 . trusted
 # For dev
 mkdir sandpit # this should fail.  That's ok
 mkdir sandpit/pycharmremote
+
+
+# git setup
+git config --global user.name "Duncan Gray"
+git config --global user.email "duncan.gray@ga.gov.au"
 
