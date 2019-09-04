@@ -30,4 +30,10 @@ sudo service docker start
 sudo usermod -aG docker $USER
 
 #aws access
- mkdir .aws
+mkdir .aws
+
+
+
+
+# Testing
+# docker run hello-world
