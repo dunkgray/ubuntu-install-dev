@@ -20,6 +20,8 @@ git clone --branch usgs_l2_testing https://github.com/opendatacube/cube-in-a-box
 git clone --branch landsat_usgs_testing https://github.com/opendatacube/WOFLs-orchestration.git /opt/WOFLs-orchestration
 git clone https://github.com/dunkgray/DEAfrica_scripts.git /opt/DEAfrica_scripts
 git clone --branch africa https://github.com/opendatacube/datacube-alchemist.git /opt/datacube-alchemist
+git clone https://github.com/digitalearthafrica/test_scripts.git /opt/test_scripts
+git clone https://github.com/digitalearthafrica/config.git /opt/config
 
 # This is for the database generation script
 # docker/auxiliary/setup-k/assets/create-db.sh

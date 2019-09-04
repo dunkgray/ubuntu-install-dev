@@ -3,6 +3,7 @@
 # from
 # https://raw.githubusercontent.com/omad/dotfiles/master/bin/vdi_install_local_conda.sh
 # Haven't tested yet
+# try -c conda-forge somewhere ....
 
 set -xeu
 DESTDIR=/local/u46/dsg547/miniconda3
