@@ -32,3 +32,8 @@ sudo snap install pycharm-community --classic
 mv .Xauthority old.Xauthority
 touch ~/.Xauthority
 xauth generate :0 . trusted
+
+# For dev
+mkdir sandpit # this should fail.  That's ok
+mkdir sandpit/pycharmremote
+
