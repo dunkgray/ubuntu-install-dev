@@ -18,12 +18,17 @@ sudo apt-get install emacs -y
 sudo apt-get install unzip -y
 sudo apt-get install python-pip -y
 sudo apt-get install maven -y
+sudo apt install xterm -y
 
 # Install terraform
 sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME/terraform-installer
 $HOME/terraform-installer/terraform-install.sh -a
 
-# Install Pycharmmore
+# Install Pycharm
 sudo snap install pycharm-community --classic
+#sudo snap install pycharm-professional --classic
 
-
+#setup Xauthority
+mv .Xauthority old.Xauthority
+touch ~/.Xauthority
+xauth generate :0 . trusted
