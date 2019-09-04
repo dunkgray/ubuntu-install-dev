@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Execute the initial start script
+./start_install.sh
 
 # Install kubectl
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
@@ -30,10 +32,10 @@ sudo service docker start
 sudo usermod -aG docker $USER
 
 #aws access
-mkdir .aws
-
-
+mkdir .aw
 
 
 # Testing
 # docker run hello-world
+
+echo "copy secrets from .bashrc, .aws config and credentails from somewhere"

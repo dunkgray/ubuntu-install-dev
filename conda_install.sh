@@ -8,8 +8,9 @@
 set -xeu
 DESTDIR=/local/u46/dsg547/miniconda3
 DESTDIR=/home/ec2-user
+DESTDIR=/home/ubuntu
 
-pushd $TMPDIR
+#pushd $TMPDIR
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
@@ -22,22 +23,25 @@ eval "$__conda_setup"
 
 conda update -n base -y conda
 
-conda create --name dea -y python=3.6 psycopg2 click gdal jupyterlab nodejs \
+conda create -c conda-forge --name dea -y python=3.6 psycopg2 click gdal jupyterlab nodejs \
     rasterio xarray pyyaml dask boltons netcdf4 lark-parser pypeg2 cachetools \
     singledispatch sqlalchemy structlog scipy \
     cattrs ciso8601 h5py pyproj ruamel.yaml shapely scikit-image \
     deepdiff flake8 pep8-naming python-rapidjson rio-cogeo numexpr
+
+conda init bash
 # for eo-datasets2
-conda activate dea
+#conda activate dea
 
 # from https://github.com/jwkvam/jupyterlab-vim
 #jupyter labextension install jupyterlab_vim
 
 # from https://github.com/pbugnion/jupyterlab-sql
-
-
 #pip install jupyterlab_sql
 #jupyter serverextension enable jupyterlab_sql --py --sys-prefix
 #jupyter lab build
 #
 #jupyter lab
+
+# This might get called many times, so it is commented out
+# echo "echo 'conda activate dea # deactivate'" >> ~/.profile
