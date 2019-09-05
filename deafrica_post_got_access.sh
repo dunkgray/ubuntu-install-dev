@@ -9,3 +9,6 @@ git clone --branch landsat_usgs_testing git@github.com:opendatacube/WOFLs-orches
 # git clone git@github.com:digitalearthafrica/config.git deafrica_config
 # git clone git@github.com:dunkgray/DEAfrica_scripts.git DEAfrica_scripts
 # git clone --branch africa git@github.com:opendatacube/datacube-alchemist.git
+# git clone git@github.com:opendatacube/datacube-core.git
+#  git clone git@github.com:opendatacube/datacube-stats.git
+#  git clone git@github.com:GeoscienceAustralia/digitalearthau.git

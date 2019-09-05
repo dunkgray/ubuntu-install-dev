@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# ubuntu based
-#
+ ubuntu based
+
 # Don't -X in, this hasn't been set up
 # Before running this script
 # sudo apt-get update
@@ -36,6 +36,9 @@ sudo snap install pycharm-community --classic
 mv .Xauthority old.Xauthority
 touch ~/.Xauthority
 xauth generate :0 . trusted
+
+# For dev
+mkdir pycharmremote
 
 # git setup
 git config --global user.name "Duncan Gray"
