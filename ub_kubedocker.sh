@@ -32,6 +32,11 @@ sudo usermod -aG docker $USER
 #aws access
 mkdir .aw
 
+# Getting ready to do
+# aws eks --region us-west-2 update-kubeconfig --name deafrica-eks
+# Installed aws is out of date..
+ sudo apt install python3-pip -y
+ pip3 install awscli --upgrade --user
 
 # Testing
 # docker run hello-world
