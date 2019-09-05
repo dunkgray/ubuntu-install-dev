@@ -8,7 +8,7 @@
 set -xeu
 DESTDIR=/local/u46/dsg547/miniconda3
 DESTDIR=/home/ec2-user
-DESTDIR=/home/ubuntu
+DESTDIR=/home/$USER
 
 #pushd $TMPDIR
 

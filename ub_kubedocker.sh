@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-# Execute the initial start script
-./start_install.sh
+sudo apt-get install curl -y
 
 # Install kubectl
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
@@ -18,7 +17,6 @@ sudo mv ./aws-iam-authenticator /usr/local/bin/aws-iam-authenticator
 sudo apt-get install \
     apt-transport-https \
     ca-certificates \
-    curl \
     gnupg-agent \
     software-properties-common -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
