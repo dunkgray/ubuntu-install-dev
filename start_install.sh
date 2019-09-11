@@ -8,6 +8,10 @@
 # sudo apt-get install git -y
 # ssh-keygen -t rsa -b 4096 -C "duncan.gray@ga.gov.au"
 # more ~/.ssh/id_rsa.pub
+#$ sudo apt-get install xclip
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+#$ xclip -sel clip < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
 # git clone git@github.com:dunkgray/ubuntu-install-dev.git
 # emacs -nw # no windows emacs
 
@@ -28,8 +32,8 @@ sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME/te
 $HOME/terraform-installer/terraform-install.sh -a
 
 # Install Pycharm
-sudo snap install pycharm-community --classic
-#sudo snap install pycharm-professional --classic
+#sudo snap install pycharm-community --classic
+sudo snap install pycharm-professional --classic
 
 
 #setup Xauthority
@@ -45,7 +49,7 @@ git config --global user.name "Duncan Gray"
 git config --global user.email "duncan.gray@ga.gov.au"
 
 # For dev
-mkdir pycharmremote
+#mkdir pycharmremote
 
 # set up the datbase
 sudo apt-get install postgresql postgresql-contrib -y
