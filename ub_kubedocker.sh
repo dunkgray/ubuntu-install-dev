@@ -40,5 +40,7 @@ mkdir .aw
 
 # Testing
 # docker run hello-world
+ #  export AWS_PROFILE=africa-eks
+ # kubectl get pods
 
 echo "copy secrets from .bashrc, .aws config and credentails from somewhere"
