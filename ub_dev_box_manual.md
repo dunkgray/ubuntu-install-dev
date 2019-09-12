@@ -21,7 +21,7 @@ evernote> Overall AWS DEA Dev Box>passwords
 # Setting up Docker
 $docker login
 
-#To prevent ssh broken pipe
+# To prevent ssh broken pipe
 in /etc/ssh/sshd_config of the server machine
 Host *
 ServerAliveInterval 120
