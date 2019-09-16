@@ -10,3 +10,4 @@ pip install --user -e $SANDPIT/eo-datasets
 pip install --user -e $SANDPIT/datacube-alchemist
 pip install --user -e $SANDPIT/digitalearthau #haven't done
 pip install --user -e $SANDPIT/datacube-stats
+pip install --user -e $SANDPIT/fc

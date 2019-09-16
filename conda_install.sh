@@ -44,4 +44,4 @@ conda init bash
 #jupyter lab
 
 # This might get called many times, so it is commented out
-# echo "echo 'conda activate dea # deactivate'" >> ~/.profile
+echo "echo 'conda activate dea # deactivate'" >> ~/.profile
