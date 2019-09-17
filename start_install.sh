@@ -27,7 +27,7 @@ sudo apt-get install python-pip -y
 sudo apt-get install maven -y
 sudo apt install xterm -y
 sudo apt install libcanberra-gtk-module libcanberra-gtk3-module -y
-
+sudo apt-get install gfortran -y
 
 # Install terraform
 sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME/terraform-installer
