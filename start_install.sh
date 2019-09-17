@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
- ubuntu based
+#  ubuntu based
 
 # Don't -X in, this hasn't been set up
 # Before running this script
