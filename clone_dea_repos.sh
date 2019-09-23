@@ -18,3 +18,4 @@ git clone git@github.com:GeoscienceAustralia/digitalearthau.git  $SANDPIT/digita
 git clone git@github.com:GeoscienceAustralia/wofs.git  $SANDPIT/wofs
 git clone git@github.com:GeoscienceAustralia/fc  $SANDPIT/fc
 git clone git@github.com:dunkgray/odc_testing.git $SANDPIT/odc_testing
+git clone git@github.com:GeoscienceAustralia/landsat-to-cog.git  $SANDPIT/landsat-to-cog
