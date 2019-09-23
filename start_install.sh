@@ -29,6 +29,7 @@ sudo apt install xterm -y
 sudo apt install libcanberra-gtk-module libcanberra-gtk3-module -y
 sudo apt-get install gfortran -y
 sudo apt  install tree -y
+pip install --extra-index-url="https://packages.dea.gadevs.ga" odc-apps-dc-tools
 
 # Install terraform
 sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME/terraform-installer
