@@ -1,5 +1,5 @@
 # let's get some repos
-SANDPIT=$HOME/sandpit
+SANDPIT=$HOME/sandbox
 git clone git@github.com:opendatacube/datacube-core.git $SANDPIT/datacube-core
 #git clone --branch landsat_usgs_testing git@github.com:opendatacube/WOFLs-orchestration.git ~/WOFLs-orchestration
 
