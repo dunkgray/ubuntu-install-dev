@@ -12,3 +12,4 @@ pip install --user -e $SANDBOX/datacube-alchemist
 pip install --user -e $SANDBOX/digitalearthau #haven't done
 pip install --user -e $SANDBOX/datacube-stats
 pip install --user -e $SANDBOX/fc
+pip install --user -e $SANDBOX/wofs

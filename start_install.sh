@@ -29,6 +29,9 @@ sudo apt install xterm -y
 sudo apt install libcanberra-gtk-module libcanberra-gtk3-module -y
 sudo apt-get install gfortran -y
 sudo apt  install tree -y
+sudo apt  install screen -y
+
+
 pip install --extra-index-url="https://packages.dea.gadevs.ga" odc-apps-dc-tools odc-apps-cloud
 
 # Install terraform
@@ -57,4 +60,7 @@ git config --global user.email "duncan.gray@ga.gov.au"
 
 # set up the datbase
 sudo apt-get install postgresql postgresql-contrib -y
+
+# for wofs - should really move to conda/ check requirements.txt in wofs
+pip install ephem
 
