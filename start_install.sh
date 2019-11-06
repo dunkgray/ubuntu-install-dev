@@ -30,7 +30,7 @@ sudo apt install libcanberra-gtk-module libcanberra-gtk3-module -y
 sudo apt-get install gfortran -y
 sudo apt  install tree -y
 sudo apt  install screen -y
-
+sudo apt install python-pytest -y
 
 pip install --extra-index-url="https://packages.dea.gadevs.ga" odc-apps-dc-tools odc-apps-cloud
 
