@@ -63,5 +63,8 @@ git config --global user.email "duncan.gray@ga.gov.au"
 sudo apt-get install postgresql postgresql-contrib -y
 
 # for wofs - should really move to conda/ check requirements.txt in wofs
-pip install ephem
+pip3 install ephem
+
+# for alchemist
+pip3 install boto3
 
