@@ -1,3 +1,5 @@
+echo "# ubuntu-install-dev mod_bash changes start " >> ~/.bashrc
+
 tee -a ~/.bashrc <<'END'
 
 # Change aws accounts and clusters
@@ -9,3 +11,6 @@ END
 
 echo "conda activate dea " >> ~/.bashrc
 echo "echo 'conda deactivate dea  # activate'" >> ~/.bashrc
+
+
+echo "# ubuntu-install-dev mod_bash changes finish " >> ~/.bashrc
