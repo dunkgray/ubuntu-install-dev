@@ -32,6 +32,7 @@ sudo apt  install tree -y
 sudo apt  install screen -y
 sudo apt install python-pytest -y
 sudo apt install dos2unix -y
+sudo apt install pep8 -y
 
 pip install --extra-index-url="https://packages.dea.gadevs.ga" odc-apps-dc-tools odc-apps-cloud
 
