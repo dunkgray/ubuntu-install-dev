@@ -28,7 +28,7 @@ conda create -c conda-forge --name dea -y python=3.6 psycopg2 click gdal jupyter
     singledispatch sqlalchemy structlog scipy \
     cattrs ciso8601 h5py pyproj ruamel.yaml shapely scikit-image \
     deepdiff flake8 pep8-naming python-rapidjson rio-cogeo numexpr requests \
-    pandoc pytest pytest-cov
+    pandoc pytest pytest-cov black
 # conda install requests 
 conda init bash
 # for eo-datasets2
