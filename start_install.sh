@@ -17,6 +17,8 @@
 
 # WRT setting up the database, follow the info in
 # evernote> Overall AWS DEA Dev Box> passwords
+sudo apt-get install software-properties-common -y
+sudo apt-add-repository universe
 
 sudo apt-get update
 sudo apt install awscli -y
@@ -33,8 +35,9 @@ sudo apt  install screen -y
 sudo apt install python-pytest -y
 sudo apt install dos2unix -y
 sudo apt install pep8 -y
+sudo apt install python-pip -y
 
-pip install --extra-index-url="https://packages.dea.gadevs.ga" odc-apps-dc-tools odc-apps-cloud
+pip3 install --extra-index-url="https://packages.dea.gadevs.ga" odc-apps-dc-tools odc-apps-cloud
 
 # Install terraform
 sudo git clone https://github.com/robertpeteuil/terraform-installer.git $HOME/terraform-installer
@@ -64,6 +67,6 @@ git config --global user.email "duncan.gray@ga.gov.au"
 sudo apt-get install postgresql postgresql-contrib -y
 
 # for wofs - should really move to conda/ check requirements.txt in wofs
-pip install ephem
+#pip3 install ephem
 
 
