@@ -16,9 +16,11 @@
 # emacs -nw # no windows emacs
 
 # WRT setting up the database, follow the info in
-# evernote> Overall AWS DEA Dev Box> passwords
+# evernote> Overall DEA Dev Box System> passwords
 sudo apt-get install software-properties-common -y
 sudo apt-add-repository universe
+
+
 
 sudo apt-get update
 sudo apt install awscli -y
