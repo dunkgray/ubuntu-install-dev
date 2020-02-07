@@ -9,10 +9,10 @@
 # https://sourceforge.net/projects/turbovnc/files/2.2.3/
 # turbovnc_2.2.3_amd64.deb
 # wget https://sourceforge.net/projects/turbovnc/files/2.2.3/turbovnc_2.2.3_amd64.deb
-# sudo dpkg -i ~/Downloads/turbovnc*.deb
+# sudo dpkg -i turbovnc*.deb
 
 
-
+cp /etc/sysconfig/tvncservers /etc/sysconfig/tvncservers.bkup
 tee /etc/sysconfig/tvncservers <<'END'
 VNCSERVERS="1:osboxes"
 END
