@@ -7,7 +7,7 @@
 # Consider incorporating some things from here;
 # https://docs.dev.dea.ga.gov.au/getting_started/workstation.html#setup-kubernetes-dev-cluster-access
 
-echo "# ubuntu-install-dev mod_bash changes start " >> ~/.bashrc
+echo "# The code below is added by ubuntu-install-dev mod_bash changes start " >> ~/.bashrc
 
 # Likely broken
 # tee -a ~/.bashrc <<'END'
@@ -19,8 +19,9 @@ echo "# ubuntu-install-dev mod_bash changes start " >> ~/.bashrc
 # }
 # END
 
-echo "conda activate dea " >> ~/.bashrc
-echo "echo 'conda deactivate dea  # activate'" >> ~/.bashrc
+# Doing this in the bash results in a bad PATH
+#echo "conda activate dea " >> ~/.bashrc
+echo "echo 'conda activate dea  # deactivate'" >> ~/.bashrc
 
 
 echo "# ubuntu-install-dev mod_bash changes finish " >> ~/.bashrc
