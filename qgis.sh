@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # load QGIS
 sudo sh -c 'echo "deb http://qgis.org/debian bionic main" >> /etc/apt/sources.list'
 sudo sh -c 'echo "deb-src http://qgis.org/debian bionic main " >> /etc/apt/sources.list'

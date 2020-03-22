@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # sudo ./hyper_ub.sh to run this 
 # Follow
 # https://docs.dev.dea.ga.gov.au/getting_started/hyper-v.html

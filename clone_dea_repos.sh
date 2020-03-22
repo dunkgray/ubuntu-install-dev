@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # let's get some repos
 SANDPIT=$HOME/sandbox
 git clone git@github.com:opendatacube/datacube-core.git $SANDPIT/datacube-core
