@@ -38,6 +38,7 @@ sudo apt install python-pytest -y
 sudo apt install dos2unix -y
 sudo apt install pep8 -y
 sudo apt install python-pip -y
+sudo apt install pylint -y
 
 pip3 install --extra-index-url="https://packages.dea.gadevs.ga" odc-apps-dc-tools odc-apps-cloud
 
