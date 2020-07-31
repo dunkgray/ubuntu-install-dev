@@ -29,3 +29,7 @@ ln -s dea-airflow/plugins/ plugins
 conda install werkzeug
 conda install paramiko
 conda install sshtunnel
+
+# once airflow is running;
+airflow connections --add --conn_id 'dsg547' --conn_type 'SSH' --conn_login 'dsg547' --conn_password '***' --conn_host 'gadi.nci.org.au'
+
