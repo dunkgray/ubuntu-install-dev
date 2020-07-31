@@ -24,8 +24,10 @@ echo "# The code below is added by ubuntu-install-dev mod_bash changes start " >
 # Doing this in the bash results in a bad PATH
 #echo "conda activate dea " >> ~/.bashrc
 
+echo "# ubuntu-install-dev mod_bash changes finish " >> ~/.bashrc
 echo "export AIRFLOW_HOME=~/airflow" >> ~/.bashrc
 echo "echo 'conda activate dea  # deactivate'" >> ~/.bashrc
+echo "echo 'conda activate airflow  # deactivate'" >> ~/.bashrc
 
 
 echo "# ubuntu-install-dev mod_bash changes finish " >> ~/.bashrc
