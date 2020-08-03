@@ -15,6 +15,7 @@ conda install airflow
 airflow initdb
 
 # start the web server, default port is 8080
+# conda activate airflow
 airflow webserver -p 8080
 
 # start the scheduler
