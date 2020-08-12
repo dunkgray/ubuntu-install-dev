@@ -13,4 +13,4 @@ pip install --user -e $SANDBOX/digitalearthau #haven't done
 pip install --user -e $SANDBOX/datacube-stats
 pip install --user -e $SANDBOX/fc
 pip install --user -e $SANDBOX/wofs
-pip install --user -e $SANDBOX/dea-docs
+#pip install --user -e $SANDBOX/dea-docs

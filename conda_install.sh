@@ -27,7 +27,7 @@ conda create -c conda-forge --name dea -y python=3.6 psycopg2 click gdal \
       jupyterlab nodejs \
     rasterio xarray pyyaml dask boltons netcdf4 lark-parser pypeg2 cachetools \
     singledispatch sqlalchemy structlog scipy \
-    cattrs ciso8601 h5py pyproj ruamel.yaml shapely scikit-image \
+    cattrs ciso8601 h5py hdf5plugin pyproj ruamel.yaml shapely scikit-image \
     deepdiff flake8 pep8-naming python-rapidjson rio-cogeo numexpr requests \
     pandoc pytest pytest-cov black ephem pycodestyle pylint geopandas
 

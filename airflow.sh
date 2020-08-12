@@ -34,3 +34,12 @@ conda install sshtunnel
 # once airflow is running;
 airflow connections --add --conn_id 'dsg547' --conn_type 'SSH' --conn_login 'dsg547' --conn_password '***' --conn_host 'gadi.nci.org.au'
 
+# https://airflow.apache.org/docs/stable/tutorial.html
+# print the list of active DAGs
+airflow list_dags
+
+# prints the list of tasks the "tutorial" dag_id
+airflow list_tasks tutorial
+
+# prints the hierarchy of tasks in the tutorial DAG
+airflow list_tasks tutorial --tree
