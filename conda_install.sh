@@ -24,12 +24,12 @@ eval "$__conda_setup"
 conda update -n base -y conda
 
 conda create -c conda-forge --name dea -y python=3.6 psycopg2 click gdal \
-      jupyterlab nodejs \
+      jupyterlab nodejs docker-compose \
     rasterio xarray pyyaml dask boltons netcdf4 lark-parser pypeg2 cachetools \
     singledispatch sqlalchemy structlog scipy \
     cattrs ciso8601 h5py hdf5plugin pyproj ruamel.yaml shapely scikit-image \
     deepdiff flake8 pep8-naming python-rapidjson rio-cogeo numexpr requests \
-    pandoc pytest pytest-cov black ephem pycodestyle pylint geopandas
+    pandoc pytest pytest-cov black ephem pycodestyle pylint geopandas 
 
 # conda install -c conda-forge airflow
 # conda create -c conda-forge airflow
