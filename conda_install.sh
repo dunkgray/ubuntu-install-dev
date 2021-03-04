@@ -30,7 +30,7 @@ conda create -c conda-forge --name dea -y python=3.6 psycopg2 click gdal \
     cattrs ciso8601 h5py hdf5plugin pyproj ruamel.yaml shapely scikit-image \
     deepdiff flake8 pep8-naming python-rapidjson rio-cogeo numexpr requests \
     pandoc pytest pytest-cov black ephem pycodestyle pylint geopandas \
-    libiconv
+    libiconv pre_commit
 
 # conda install -c conda-forge airflow
 # conda create -c conda-forge airflow
