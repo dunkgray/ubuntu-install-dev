@@ -1,5 +1,5 @@
 sudo yum update
-curl -O https://bootstrap.pypa.io/get-pip.pyls
+curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
 pip install --upgrade pip
 python3 -m /home/ec2-user/.venv
