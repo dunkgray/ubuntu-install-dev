@@ -1,7 +1,7 @@
 sudo yum update
 curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
-pip install --upgrade pip
+yes | pip install --upgrade pip
 # this was failing, so no virtual env
 #python3 -m /home/ec2-user/.venv
 #source /$HOME/.venv/bin/activate
@@ -9,7 +9,7 @@ pip install --upgrade pip
 # Removing to confirm that they are needed
 #sudo yum -y install postgresql postgresql-devel python-devel
 #sudo yum -y install gcc
-#sudo yum -y install python3-devel
+sudo yum -y install python3-devel
 
 pip install eodatasets3==0.18
 # This dataset just dropped off
