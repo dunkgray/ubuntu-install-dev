@@ -8,7 +8,7 @@ yes | pip install --upgrade pip
 
 # Removing to confirm that they are needed
 #sudo yum -y install postgresql postgresql-devel python-devel
-#sudo yum -y install gcc
+sudo yum -y install gcc
 sudo yum -y install python3-devel
 
 pip install eodatasets3==0.18
