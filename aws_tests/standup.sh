@@ -1,4 +1,4 @@
-sudo yum update
+sudo yum -y update
 curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
 yes | pip install --upgrade pip
