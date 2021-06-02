@@ -5,9 +5,12 @@ pip install --upgrade pip
 # this was failing, so no virtual env
 #python3 -m /home/ec2-user/.venv
 #source /$HOME/.venv/bin/activate
-sudo yum -y install postgresql postgresql-devel python-devel
-sudo yum -y install gcc
-sudo yum -y install python3-devel
+
+# Removing to confirm that they are needed
+#sudo yum -y install postgresql postgresql-devel python-devel
+#sudo yum -y install gcc
+#sudo yum -y install python3-devel
+
 pip install eodatasets3==0.18
 # This dataset just dropped off
 #aws s3 cp s3://ga-sentinel/L1/LANDSAT/USGS-C2/2021-04-22/LC81010712021112LGN00/ $HOME/data/LC81010712021112LGN00/ --no-sign-request --recursive
