@@ -12,8 +12,11 @@
 # Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
 #$ xclip -sel clip < ~/.ssh/id_rsa.pub
 # Copies the contents of the id_rsa.pub file to your clipboard
+# get the public keys into git then
 # git clone git@github.com:dunkgray/ubuntu-install-dev.git
 # emacs -nw # no windows emacs
+
+# Now run the scripts in overall.sh
 
 # WRT setting up the database, follow the info in
 # evernote> Overall DEA Dev Box System> passwords
@@ -42,6 +45,7 @@ sudo apt install pylint -y
 sudo apt install zerofree -y
 sudo apt-get install libpq-dev
 sudo apt-get install ntp
+sudo apt-get install curl -y
 
 pip3 install --extra-index-url="https://packages.dea.gadevs.ga" odc-apps-dc-tools odc-apps-cloud
 
@@ -66,11 +70,12 @@ mkdir pycharmremote
 git config --global user.name "Duncan Gray"
 git config --global user.email "duncan.gray@ga.gov.au"
 
-# For dev
-#mkdir pycharmremote
-
 # set up the datbase
 sudo apt-get install postgresql postgresql-contrib -y
+
+
+sudo apt install python3-pip -y
+pip3 install awscli --upgrade --user
 
 # for wofs - should really move to conda/ check requirements.txt in wofs
 #pip3 install ephem

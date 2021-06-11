@@ -2,7 +2,9 @@
 
 # Execute the initial start script
 ./start_install.sh
-./ub_kubedocker.sh
+
+# I don't need this yet
+#./ub_kubedocker.sh
 ./conda_install.sh
 ./mod_bash.sh
 
