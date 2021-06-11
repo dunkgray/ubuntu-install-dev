@@ -39,6 +39,9 @@ sudo apt install dos2unix -y
 sudo apt install pep8 -y
 sudo apt install python-pip -y
 sudo apt install pylint -y
+sudo apt install zerofree -y
+sudo apt-get install libpq-dev
+sudo apt-get install ntp
 
 pip3 install --extra-index-url="https://packages.dea.gadevs.ga" odc-apps-dc-tools odc-apps-cloud
 
