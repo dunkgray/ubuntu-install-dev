@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# 
+DESTDIR=/home/$USER
+__conda_setup="$(${DESTDIR}/bin/conda 'shell.bash' 'hook' 2> /dev/null)"
+eval "$__conda_setup"
+
+conda activate dea
+
 SANDBOX=$HOME/sandbox
 
 # This is after repo set up ....
