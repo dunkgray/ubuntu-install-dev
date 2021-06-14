@@ -14,7 +14,8 @@ git clone git@github.com:GeoscienceAustralia/digitalearthau.git  $SANDBOX/digita
 git clone git@github.com:GeoscienceAustralia/dea-config.git  $SANDBOX/dea-config
 git clone git@github.com:GeoscienceAustralia/wagl.git $SANDBOX/wagl
 git clone git@github.com:OpenDataCubePipelines/tesp.git $SANDBOX/tesp
+git clone git@bitbucket.org:geoscienceaustralia/dea-internal-docs.git $SANDBOX/dea-internal-docs
 
-git clone git@github.com:GeoscienceAustralia/dea-internal-docs.git $SANDBOX/dea-internal-docs
 git clone git@github.com:dunkgray/processingDEA.git $SANDBOX/processingDEA
-git clone git@github.com:GeoscienceAustralia/landsat-downloader.git $SANDBOX/landsat-downloader
+
+git clone git@bitbucket.org:geoscienceaustralia/landsat-downloader.git $SANDBOX/landsat-downloader

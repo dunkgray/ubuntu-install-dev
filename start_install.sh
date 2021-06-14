@@ -12,7 +12,7 @@
 # Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
 #$ xclip -sel clip < ~/.ssh/id_rsa.pub
 # Copies the contents of the id_rsa.pub file to your clipboard
-# get the public keys into git then
+# get the public keys into github and bitbucket then
 # git clone git@github.com:dunkgray/ubuntu-install-dev.git
 # emacs -nw # no windows emacs
 
