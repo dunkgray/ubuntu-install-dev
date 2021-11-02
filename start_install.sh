@@ -7,7 +7,7 @@
 # sudo apt-get update
 # sudo apt-get install git -y
 # ssh-keygen -t rsa -b 4096 -C "duncan.gray@ga.gov.au"
-# more ~/.ssh/id_rsa.pub
+# cat ~/.ssh/id_rsa.pub
 #$ sudo apt-get install xclip -y
 # Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
 #$ xclip -sel clip < ~/.ssh/id_rsa.pub
@@ -24,22 +24,22 @@ sudo apt-get install software-properties-common -y
 sudo apt-add-repository universe
 
 sudo apt-get update
-sudo apt install awscli -y
+sudo apt-get install awscli -y
 sudo apt-get install git -y
 sudo apt-get install emacs -y
 sudo apt-get install unzip -y
-sudo apt-get install python-pip -y
+sudo apt-get install python3-pip -y
 sudo apt-get install maven -y
-sudo apt install xterm -y
-sudo apt install libcanberra-gtk-module libcanberra-gtk3-module -y
+sudo apt-get install xterm -y
+sudo apt-get install libcanberra-gtk-module libcanberra-gtk3-module -y
 sudo apt-get install gfortran -y
-sudo apt install tree -y
-sudo apt install screen -y
-sudo apt install python-pytest -y
-sudo apt install dos2unix -y
-sudo apt install pep8 -y
-sudo apt install pylint -y
-sudo apt install zerofree -y
+sudo apt-get install tree -y
+sudo apt-get install screen -y
+sudo apt-get install python-pytest -y
+sudo apt-get install dos2unix -y
+#sudo apt install pep8 -y
+sudo apt-get install pylint -y
+sudo apt-get install zerofree -y
 sudo apt-get install libpq-dev -y
 sudo apt-get install ntp -y
 sudo apt-get install curl -y
@@ -50,17 +50,17 @@ sudo apt-get install curl -y
 #sudo snap install pycharm-community --classic
 sudo snap install pycharm-professional --classic
 
-#setup Xauthority
-mv .Xauthority old.Xauthority
-touch ~/.Xauthority
-xauth generate :0 . trusted
+#setup Xauthority - for ec2 instances
+#mv .Xauthority old.Xauthority
+#touch ~/.Xauthority
+#xauth generate :0 . trusted
 
 # git setup
 git config --global user.name "Duncan Gray"
 git config --global user.email "duncan.gray@ga.gov.au"
 
-sudo apt install python3-pip -y
-pip3 install awscli --upgrade --user
+# Just another way of installing awscli?
+#pip3 install awscli --upgrade --user
 
 # set up the datbase
 #sudo apt-get install postgresql postgresql-contrib -y
