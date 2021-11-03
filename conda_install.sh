@@ -5,6 +5,8 @@
 # Haven't tested yet
 # try -c conda-forge somewhere ....
 
+# This takes 2 to 4 hours.
+
 set -xeu
 DESTDIR=/local/u46/dsg547/miniconda3
 DESTDIR=/home/ec2-user
