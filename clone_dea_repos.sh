@@ -5,6 +5,8 @@ SANDBOX=$HOME/sandbox
 
 mkdir -p  $SANDBOX/
 
+CURR=$PWD
+
 #
 #git clone git@github.com:GeoscienceAustralia/.git $SANDBOX/
 git clone git@github.com:GeoscienceAustralia/dea-ard-scene-select.git $SANDBOX/dea-ard-scene-select
@@ -21,3 +23,17 @@ git clone git@github.com:dunkgray/processingDEA.git $SANDBOX/processingDEA
 
 git clone git@bitbucket.org:geoscienceaustralia/landsat-downloader.git $SANDBOX/landsat-downloader
 git clone git@bitbucket.org:geoscienceaustralia/usgsdownloader.git $SANDBOX/usgsdownloader
+
+cd $SANDBOX/landsat-downloader
+pre-commit install
+
+cd $SANDBOX/eo-datasets
+pre-commit install
+
+cd $SANDBOX/datacube-core
+pre-commit install
+
+cd $SANDBOX/digitalearthau
+pre-commit install
+
+cd $CURR
