@@ -44,6 +44,10 @@ sudo apt-get install libpq-dev -y
 sudo apt-get install ntp -y
 sudo apt-get install curl -y
 
+# for  pre-commit
+sudo apt-get install shellcheck -y
+sudo snap install shfmt
+
 #pip3 install --extra-index-url="https://packages.dea.gadevs.ga" odc-apps-dc-tools odc-apps-cloud
 
 # Install Pycharm
