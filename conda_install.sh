@@ -25,14 +25,40 @@ eval "$__conda_setup"
 
 conda update -n base -y conda
 
-conda create -c conda-forge --name dea -y python=3.6 psycopg2 click gdal \
-      jupyterlab nodejs docker-compose \
-    rasterio xarray pyyaml dask boltons netcdf4 lark-parser pypeg2 cachetools \
-    singledispatch sqlalchemy structlog scipy \
-    cattrs ciso8601 h5py hdf5plugin pyproj ruamel.yaml shapely scikit-image \
-    deepdiff flake8 pep8-naming python-rapidjson rio-cogeo numexpr requests \
-    pandoc pytest pytest-cov black ephem pycodestyle pylint geopandas \
-    libiconv pre_commit
+# conda create -n odc -c conda-forge python=3.8 datacube pre_commit
+
+# not in odc
+# So do this after odc env has been set up
+# And maybe I shouldn't overload the env....
+# so I wont
+# this works
+conda create -n odc2020 -c conda-forge python=3.8 datacube pre_commit
+
+# this blows up with unresolved conflicts.
+conda install -n odc2020 \
+ gdal jupyterlab nodejs    singledispatch \
+  scipy cattrs h5py  ruamel.yaml \
+ scikit-image flake8 pep8-naming python-rapidjson \
+  numexpr requests pandoc pytest pytest-cov \
+ black ephem pycodestyle pylint geopandas \
+ libiconv  pre_commit
+
+# I just need to actually create seperate envs
+# like it was set up for
+
+# unavailable packages have been removed
+# ciso8601 deepdiff docker-compose pypeg2 boltons rio-cogeo structlog hdf5plugin
+
+# datacube core needs python=3.8 these days
+# it has it's own install script.
+# conda create -c conda-forge --name dea -y python=3.6 psycopg2 click gdal \
+#       jupyterlab nodejs docker-compose \
+#     rasterio xarray pyyaml dask boltons netcdf4 lark-parser pypeg2 cachetools \
+#     singledispatch sqlalchemy structlog scipy \
+#     cattrs ciso8601 h5py hdf5plugin pyproj ruamel.yaml shapely scikit-image \
+#     deepdiff flake8 pep8-naming python-rapidjson rio-cogeo numexpr requests \
+#     pandoc pytest pytest-cov black ephem pycodestyle pylint geopandas \
+#     libiconv pre_commit
 
 # conda install -c conda-forge airflow
 # conda create -c conda-forge airflow

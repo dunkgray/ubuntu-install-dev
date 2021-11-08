@@ -32,6 +32,7 @@ pre-commit install
 
 cd $SANDBOX/datacube-core
 pre-commit install
+conda create -n odc -c conda-forge python=3.8 datacube pre_commit
 
 cd $SANDBOX/digitalearthau
 pre-commit install
