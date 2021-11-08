@@ -27,21 +27,27 @@ conda update -n base -y conda
 
 # conda create -n odc -c conda-forge python=3.8 datacube pre_commit
 
-# not in odc
-# So do this after odc env has been set up
-# And maybe I shouldn't overload the env....
-# so I wont
+# many packages in dea env not in odc env
+# odc2020 is an odc env I can hack things onto
 # this works
 conda create -n odc2020 -c conda-forge python=3.8 datacube pre_commit
 
+# This worked
+conda install -n odc2020  -c conda-forge structlog black pre_commit pytest \
+      flake8 pep8-naming python-rapidjson numexpr requests pandoc \
+      ruamel ruamel.yaml \
+
+# for landsat-downloader 
+conda install -n odc2020  -c conda-forge ruamel ruamel.yaml
+
 # this blows up with unresolved conflicts.
-conda install -n odc2020 \
- gdal jupyterlab nodejs    singledispatch \
-  scipy cattrs h5py  ruamel.yaml \
- scikit-image flake8 pep8-naming python-rapidjson \
-  numexpr requests pandoc pytest pytest-cov \
- black ephem pycodestyle pylint geopandas \
- libiconv  pre_commit
+# conda install -n odc2020 \
+#  gdal jupyterlab nodejs    singledispatch \
+#   scipy cattrs h5py  ruamel.yaml \
+#  scikit-image flake8 pep8-naming python-rapidjson \
+#   numexpr requests pandoc pytest pytest-cov \
+#  black ephem pycodestyle pylint geopandas \
+#  libiconv  pre_commit
 
 # I just need to actually create seperate envs
 # like it was set up for
@@ -81,4 +87,5 @@ conda init bash
 #jupyter lab
 
 # This might get called many times, so it is commented out
-echo "echo 'conda activate dea # deactivate'" >> ~/.profile
+echo "echo 'conda activate odc # deactivate'" >> ~/.profile
+echo "echo 'conda activate odc2020 # deactivate'" >> ~/.profile

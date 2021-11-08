@@ -27,7 +27,7 @@ echo "# The code below is added by ubuntu-install-dev mod_bash changes start " >
 echo "# ubuntu-install-dev mod_bash changes finish " >> ~/.bashrc
 echo "# export AIRFLOW_HOME=~/airflow # use docker instead" >> ~/.bashrc
 echo "echo 'conda activate dea  # deactivate'" >> ~/.bashrc
-echo "echo 'conda activate airflow  # deactivate'" >> ~/.bashrc
+echo "echo 'conda activate odc  # deactivate'" >> ~/.bashrc
 
 
 echo "# ubuntu-install-dev mod_bash changes finish " >> ~/.bashrc
