@@ -18,3 +18,4 @@ pip install --user -e $SANDBOX/eo-datasets
 #pip install --user -e $SANDBOX/digitalearthau #haven't done
 #pip install --user -e $SANDBOX/datacube-stats
 pip install --user -e $SANDBOX/wagl
+pip install --user -e $SANDBOX/dea-ard-scene-select

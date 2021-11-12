@@ -23,6 +23,7 @@ git clone git@github.com:dunkgray/processingDEA.git $SANDBOX/processingDEA
 
 git clone git@bitbucket.org:geoscienceaustralia/landsat-downloader.git $SANDBOX/landsat-downloader
 git clone git@bitbucket.org:geoscienceaustralia/usgsdownloader.git $SANDBOX/usgsdownloader
+git clone git@bitbucket.org:geoscienceaustralia/eo-integration-tests.git $SANDBOX/eo-integration-tests
 
 cd $SANDBOX/landsat-downloader
 pre-commit install

@@ -35,10 +35,12 @@ conda create -n odc2020 -c conda-forge python=3.8 datacube pre_commit
 # This worked
 conda install -n odc2020  -c conda-forge structlog black pre_commit pytest \
       flake8 pep8-naming python-rapidjson numexpr requests pandoc \
-      ruamel ruamel.yaml \
+      ruamel ruamel.yaml
 
 # for landsat-downloader 
 conda install -n odc2020  -c conda-forge ruamel ruamel.yaml
+
+conda install -n odc2020  -c boto
 
 # this blows up with unresolved conflicts.
 # conda install -n odc2020 \
