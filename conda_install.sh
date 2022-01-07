@@ -38,10 +38,9 @@ conda install -n odc2020  -c conda-forge structlog black pre_commit pytest \
       ruamel ruamel.yaml
 
 # for landsat-downloader 
-conda install -n odc2020  -c conda-forge ruamel ruamel.yaml
+conda install -n odc2020  -c conda-forge boto croniter feedparser
 
-conda install -n odc2020  -c boto
-
+conda install -n odc2020  -c conda-forge lxml
 # this blows up with unresolved conflicts.
 # conda install -n odc2020 \
 #  gdal jupyterlab nodejs    singledispatch \
