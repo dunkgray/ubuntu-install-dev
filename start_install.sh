@@ -6,7 +6,7 @@
 # Before running this script
 # sudo apt-get update
 # sudo apt-get install git -y
-# ssh-keygen -t rsa -b 4096 -C "duncan.gray@ga.gov.au"
+# ssh-keygen -t ed25519 -C "duncan.gray@ga.gov.au"
 # cat ~/.ssh/id_rsa.pub
 #$ sudo apt-get install xclip -y
 # Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
